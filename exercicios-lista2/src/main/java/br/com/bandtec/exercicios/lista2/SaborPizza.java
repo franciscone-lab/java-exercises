@@ -38,19 +38,18 @@ public class SaborPizza {
             }
             saborPizza++;
         } while (saborPizza < 10);
-        
-        System.out.println("Votos:" + 
-                "\nMussarela: " + mussarela +
-                "\nCalabresa: " + calabresa +
-                "\nQuatro queijos: " +quatroQueijos);
+
+        System.out.println("Votos:"
+                + "\nMussarela: " + mussarela
+                + "\nCalabresa: " + calabresa
+                + "\nQuatro queijos: " + quatroQueijos);
         if (mussarela > quatroQueijos && mussarela > calabresa) {
             System.out.println("\nSabor favorito: Mussarela");
         } else if (calabresa > quatroQueijos && calabresa > mussarela) {
             System.out.println("\nSabor favorito: Calabresa");
-        } else if (quatroQueijos > calabresa && quatroQueijos > mussarela){
-                        System.out.println("\nSabor favorito: Calabresa");
-        }
-        else {
+        } else if (quatroQueijos > calabresa && quatroQueijos > mussarela) {
+            System.out.println("\nSabor favorito: Calabresa");
+        } else {
             System.out.println("\nDeu empate!");
         }
     }
