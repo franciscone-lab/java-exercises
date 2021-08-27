@@ -32,6 +32,8 @@ public class SaborPizza {
                     quatroQueijos++;
                     break;
                 default:
+                    System.out.println("Voto inválido!");
+                    saborPizza--;
                     break;
             }
             saborPizza++;
@@ -45,8 +47,11 @@ public class SaborPizza {
             System.out.println("\nSabor favorito: Mussarela");
         } else if (calabresa > quatroQueijos && calabresa > mussarela) {
             System.out.println("\nSabor favorito: Calabresa");
-        } else {
-            System.out.println("\nSabor favorito: Quatro queijos");
+        } else if (quatroQueijos > calabresa && quatroQueijos > mussarela){
+                        System.out.println("\nSabor favorito: Calabresa");
+        }
+        else {
+            System.out.println("\nDeu empate!");
         }
     }
 }

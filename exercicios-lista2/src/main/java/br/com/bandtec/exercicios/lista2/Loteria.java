@@ -9,7 +9,7 @@ public class Loteria {
         Scanner leitor = new Scanner(System.in);
         
         Integer numeroSorteado = ThreadLocalRandom.current().nextInt(0, 11);
-        Integer qtdTentativas = 0;
+        Integer qtdTentativas = 0;  
         
         System.out.println("Digite um número de 0 a 10: ");
         Integer tentativa  = leitor.nextInt();

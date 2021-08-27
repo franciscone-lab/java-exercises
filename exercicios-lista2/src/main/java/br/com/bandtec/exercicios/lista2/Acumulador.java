@@ -12,11 +12,12 @@ public class Acumulador {
         System.out.println("Digite um número: ");
         Integer numeroDigitado = leitor.nextInt();
 
-        while (numeroDigitado != 0) {
+        do {
             somaNumeros += numeroDigitado;
             System.out.println("Digite novamente...");
             numeroDigitado = leitor.nextInt();
-        }
+
+        } while (numeroDigitado != 0);
 
         System.out.println("Soma de números lidos: " + somaNumeros);
     }

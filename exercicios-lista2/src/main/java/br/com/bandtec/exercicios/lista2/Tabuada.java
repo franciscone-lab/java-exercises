@@ -9,14 +9,14 @@ public class Tabuada {
 
         System.out.println("Digite um número: ");
         Integer numeroTabuada = leitor.nextInt();
-        
+
         System.out.println("\n");
         System.out.println("Tabuada do " + numeroTabuada);
         System.out.println("\n");
         for (int i = 0; i <= 10; i++) {
 
-            System.out.println(numeroTabuada + " X " + i + " = "
-                    + numeroTabuada * i);
+            System.out.println(String.format("%d X %d = %d", numeroTabuada, i,
+                    (numeroTabuada * i)));
         }
     }
 }
