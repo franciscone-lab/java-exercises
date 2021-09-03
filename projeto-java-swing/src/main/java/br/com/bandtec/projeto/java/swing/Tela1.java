@@ -138,7 +138,7 @@ public class Tela1 extends javax.swing.JFrame {
 
     private void btnTrocarTituloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTrocarTituloActionPerformed
         // TODO add your handling code here:
-        String novoTitulo = txtTitulo.getText();
+        String novoTitulo = txtTitulo1.getText();
         lblTitulo.setText(novoTitulo);
     }//GEN-LAST:event_btnTrocarTituloActionPerformed
 
@@ -148,6 +148,14 @@ public class Tela1 extends javax.swing.JFrame {
 
     private void btnTrocarTitulo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTrocarTitulo1ActionPerformed
         // TODO add your handling code here:
+        
+        Integer numero = Integer.valueOf(txtTitulo.getText());
+        
+        Integer numero2 = Integer.valueOf(txtTitulo2.getText());
+        
+        Integer resultado = numero + numero2;
+        
+        lblTitulo.setText(resultado.toString());
     }//GEN-LAST:event_btnTrocarTitulo1ActionPerformed
 
     private void txtTitulo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTitulo2ActionPerformed
