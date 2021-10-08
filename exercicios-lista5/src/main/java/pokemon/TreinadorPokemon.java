@@ -34,16 +34,22 @@ public class TreinadorPokemon {
     public void treinarPokemon(Pokemon nome) {
         nome.setForcaPokemon(nome.getForcaPokemon() + (10 * 10 / 100));
         nome.setDocesPokemon(nome.getDocesPokemon() + 10);
-        setNivelTreinador(getNivelTreinador() + 2);
+        this.nivelTreinador += 2;
     }
-    
+
+    public void treinarPokemon(Pokemon nome, Integer a) {
+        nome.setForcaPokemon(nome.getForcaPokemon() + (10 * 10 / 100));
+        nome.setDocesPokemon(nome.getDocesPokemon() + 10);
+        this.nivelTreinador += 2;
+    }
+
     public void evoluirPokemon(Pokemon nome, String nomeEvolucao) {
         if (nome.getDocesPokemon() >= 50) {
             String nomeAntigo = nome.getNomePokemon();
             nome.setNomePokemon(nomeEvolucao);
             String nomeNovo = nome.getNomePokemon();
             nome.setDocesPokemon(nome.getDocesPokemon() - 50);
-            setNivelTreinador(getNivelTreinador() + 10);
+            this.nivelTreinador += 10;
             System.out.println(String.format("Pokémon %s evoluiu para -> %s", nomeAntigo, nomeNovo));
         } else {
             System.out.println("Não foi possível realizar operação");

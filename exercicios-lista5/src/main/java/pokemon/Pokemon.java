@@ -5,12 +5,13 @@ public class Pokemon {
     private String nomePokemon;
     private String tipoPokemon;
     private Integer forcaPokemon;
-    private Integer docesPokemon = 0;
+    private Integer docesPokemon;
 
     public Pokemon(String nomePokemon, String tipoPokemon, Integer forcaPokemon) {
         this.nomePokemon = nomePokemon;
         this.tipoPokemon = tipoPokemon;
         this.forcaPokemon = forcaPokemon;
+        this.docesPokemon = 0;
     }
 
     public String getNomePokemon() {

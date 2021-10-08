@@ -6,7 +6,7 @@ public class TesteColaborador {
         Colaborador carlos = new Colaborador("Carlos", "Estagiário", 900.0);
         Colaborador kazu = new Colaborador("Kazu", "Gerente", 4900.0);
 
-        RecursosHumanos rhValeMobi = new RecursosHumanos(2, 1);
+        RecursosHumanos rhValeMobi = new RecursosHumanos();
 
         System.out.println(carlos);
         System.out.println(kazu);
