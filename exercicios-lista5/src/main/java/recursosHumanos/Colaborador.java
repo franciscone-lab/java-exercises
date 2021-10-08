@@ -1,6 +1,7 @@
 package recursosHumanos;
 
 public class Colaborador {
+
     private String nome;
     private String cargo;
     private Double salario;
@@ -39,5 +40,5 @@ public class Colaborador {
     public String toString() {
         return String.format("\nColaborador: %s \nCargo: %s \nSalário: R$ %.2f\n", nome, cargo, salario);
     }
-    
+
 }

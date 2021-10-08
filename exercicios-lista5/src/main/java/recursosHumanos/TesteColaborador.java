@@ -18,7 +18,7 @@ public class TesteColaborador {
 
         System.out.println(carlos);
         System.out.println(kazu);
-        
+
         System.out.println(String.format("Total de promoções: %d", rhValeMobi.getTotalPromovidos()));
         System.out.println(String.format("Total de reajustes de salário: %d", rhValeMobi.getTotalSalariosReajustados()));
 

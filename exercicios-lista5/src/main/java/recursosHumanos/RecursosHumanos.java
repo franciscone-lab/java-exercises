@@ -1,6 +1,7 @@
 package recursosHumanos;
 
 public class RecursosHumanos {
+
     private Integer totalPromovidos;
     private Integer totalSalariosReajustados;
 
@@ -24,12 +25,12 @@ public class RecursosHumanos {
     public void setTotalSalariosReajustados(Integer totalSalariosReajustados) {
         this.totalSalariosReajustados = totalSalariosReajustados;
     }
-    
+
     public void reajustarSalario(Colaborador colaborador, Double salarioReajusteColaborador) {
-        colaborador.setSalario(colaborador.getSalario() + salarioReajusteColaborador); 
+        colaborador.setSalario(colaborador.getSalario() + salarioReajusteColaborador);
         this.totalSalariosReajustados++;
     }
-    
+
     public void promoverColaborador(Colaborador colaborador, String novoCargo, Double novoSalario) {
         if (colaborador.getSalario() < novoSalario) {
             colaborador.setCargo(novoCargo);

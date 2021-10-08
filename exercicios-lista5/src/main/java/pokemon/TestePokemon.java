@@ -14,14 +14,14 @@ public class TestePokemon {
         matheus.treinarPokemon(pikachu);
         matheus.treinarPokemon(pikachu);
         System.out.println(pikachu);
-        
+
         matheus.evoluirPokemon(pikachu, "Raichu");
         System.out.println(pikachu);
-        
+
         matheus.treinarPokemon(charmander);
         matheus.treinarPokemon(charmander);
         System.out.println(charmander);
-        
+
         matheus.evoluirPokemon(charmander, "Charmeleon");
         System.out.println(matheus);
     }
