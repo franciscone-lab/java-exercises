@@ -6,6 +6,7 @@ public class Clube {
     private Integer vitoria;
     private Integer derrota;
     private Integer empate;
+    private Integer pontos;
 
     // Construtor
     public Clube(String nomeTime) {
@@ -13,6 +14,15 @@ public class Clube {
         this.vitoria = 0;
         this.derrota = 0;
         this.empate = 0;
+        this.pontos = 0;
+    }
+
+    public Integer getPontos() {
+        return pontos;
+    }
+
+    public void setPontos(Integer pontos) {
+        this.pontos = pontos;
     }
 
     public String getNomeTime() {
@@ -47,15 +57,34 @@ public class Clube {
         this.empate = empate;
     }
 
-    // Método
-    public void registrarVitoria(String nomeDoTime, Integer vitoriaDoTime) {
-        nomeTime = nomeDoTime;
-        vitoria = vitoriaDoTime;
+    // Métodos
+    public void registrarVitoria() {
+        this.vitoria++;
+        this.pontos += 3;
+
+        System.out.println(String.format("%s ganhou nessa rodada", this.nomeTime));
+    }
+
+    public void registrarEmpate() {
+        this.empate++;
+        this.pontos++;
+
+        System.out.println(String.format("%s empatou nessa rodada", this.nomeTime));
+
+    }
+
+    public void registrarDerrota() {
+        this.derrota++;
+
+        System.out.println(String.format("%s perdeu nessa rodada", this.nomeTime));
+
     }
 
     // toString
     @Override
     public String toString() {
-        return "Clube:" + "nomeTime=" + nomeTime + ", vitoria=" + vitoria + ", derrota=" + derrota + ", empate=" + empate + '}';
+        return String.format("%s: %d vitórias, %d empates, %d derrotas\nTotal de pontos: %d", 
+                this.nomeTime, this.vitoria, this.empate, this.derrota, this.pontos);
     }
+
 }
