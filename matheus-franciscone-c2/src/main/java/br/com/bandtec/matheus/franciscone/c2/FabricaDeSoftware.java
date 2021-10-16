@@ -30,7 +30,7 @@ public class FabricaDeSoftware {
     }
 
     public void realizarPagamento(Desenvolvedor desenvolvedor, Double pagamentoDesenvolvedor) {
-        if (desenvolvedor.getAtivo() == true) {
+        if (desenvolvedor.getAtivo()) {
             desenvolvedor.setSalario(desenvolvedor.getSalario() + pagamentoDesenvolvedor);
             System.out.println(String.format("Realizando pagamento sem bônus:\nValor do pagamento: R$%.2f\nID: %d\nNome: %s\nCargo: %s\nAtivo: %s\n"
                     + "Valor a receber: %.2f", pagamentoDesenvolvedor, desenvolvedor.getId(), desenvolvedor.getNome(), desenvolvedor.getCargo(), desenvolvedor.getAtivo() ? "Sim" : "Não", desenvolvedor.getSalario()));
@@ -42,7 +42,7 @@ public class FabricaDeSoftware {
     }
 
     public void realizarPagamento(Desenvolvedor desenvolvedor, Double pagamentoDesenvolvedor, Integer valorBonus) {
-        if (desenvolvedor.getAtivo() == true) {
+        if (desenvolvedor.getAtivo()) {
             Double bonusSalarial = (valorBonus * pagamentoDesenvolvedor) / 100;
             Double pagamentoComBonus = pagamentoDesenvolvedor + bonusSalarial;
             desenvolvedor.setSalario(desenvolvedor.getSalario() + pagamentoComBonus);
