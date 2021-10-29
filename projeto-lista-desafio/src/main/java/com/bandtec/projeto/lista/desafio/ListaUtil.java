@@ -29,51 +29,85 @@ public class ListaUtil {
     }
 
     public Integer countPares() {
-        if (inteiros.size() == 0) {
+        if (inteiros.isEmpty()) {
+            return 0;
+        } else {
             int qtdPares = 0;
             for (int i = 0; i < inteiros.size(); i++) {
-                if (inteiros.indexOf(i) % 2 == 0) {
+                if (inteiros.get(i) % 2 == 0) {
                     qtdPares++;
                 }
             }
             return qtdPares;
-        } else {
-            return 0;
         }
     }
 
     public Integer countImpares() {
-        if (inteiros.size() == 0) {
+        if (inteiros.isEmpty()) {
+            return 0;
+        } else {
             int qtdPares = 0;
             for (int i = 0; i < inteiros.size(); i++) {
-                if (inteiros.indexOf(i) % 2 == 1) {
+                if (inteiros.get(i) % 2 != 0) {
                     qtdPares++;
                 }
             }
             return qtdPares;
-        } else {
-            return 0;
         }
     }
 
     public Integer somar() {
 //        return null;
-        if (inteiros.size() == 0) {
-          
-        } else {
+        if (inteiros.isEmpty()) {
             return 0;
+        } else {
+            int totalValores = 0;
+            for (int i = 0; i < inteiros.size(); i++) {
+                totalValores += inteiros.get(i);
+            }
+            return totalValores;
         }
     }
 
     public Integer getMaior() {
-        return null;
+        if (inteiros.isEmpty()) {
+            return 0;
+        } else {
+            int maiorValor = 0;
+            for (int i = 0; i < inteiros.size(); i++) {
+                if (inteiros.get(i) > maiorValor) {
+                    maiorValor = inteiros.get(i);
+                }
+            }
+            return maiorValor;
+        }
     }
 
     public Integer getMenor() {
-        return null;
+        if (inteiros.isEmpty()) {
+            return 0;
+        } else {
+            int menorValor = 10000;
+            for (int i = 0; i < inteiros.size(); i++) {
+                if (inteiros.get(i) < menorValor) {
+                    menorValor = inteiros.get(i);
+                }
+            }
+            return menorValor;
+        }
     }
 
     public Boolean hasDuplicidade() {
-        return null;
+        boolean temDuplicidade = false;
+        for (int i = 0; i < inteiros.size(); i++) {
+            for (int j = 0; j < inteiros.size(); j++) {
+                if (i != j) {
+                    if (inteiros.get(i).equals(inteiros.get(j))) {
+                        temDuplicidade = true;
+                    }
+                }
+            }
+        }
+        return temDuplicidade;
     }
 }

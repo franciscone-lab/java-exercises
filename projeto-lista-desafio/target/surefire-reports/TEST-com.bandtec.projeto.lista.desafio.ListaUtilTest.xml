@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="20" failures="11" name="com.bandtec.projeto.lista.desafio.ListaUtilTest" time="0.022" errors="0" skipped="0">
+<testsuite tests="20" failures="0" name="com.bandtec.projeto.lista.desafio.ListaUtilTest" time="0.008" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9"/>
@@ -13,6 +13,7 @@
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="test" value="com.bandtec.projeto.lista.desafio.ListaUtilTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/home/matheus/Github/bandtec/java/projeto-lista-desafio"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
@@ -44,7 +45,7 @@
     <property name="java.class.path" value="/home/matheus/netbeans-12.0/netbeans/java/maven/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/home/matheus/netbeans-12.0/netbeans/java/maven-nblib/netbeans-eventspy.jar test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=com.bandtec.projeto.lista.desafio.ListaUtilTest -Dmaven.ext.class.path=/home/matheus/netbeans-12.0/netbeans/java/maven-nblib/netbeans-eventspy.jar surefire:test"/>
     <property name="java.home" value="/home/matheus/.sdkman/candidates/java/11.0.11.hs-adpt"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -63,130 +64,24 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountQuandoAcionadoEListaEstaVaziaRetorna0" time="0.002"/>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testRemoveQuandoAcionadoComArgumento101NaoDiminuiTamanhoDaLista" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountImparesQuandoAcionadoEListaPossui3ImparesRetorna3" time="0.005"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testSomarQuandoAcionadoEListaEstavaziaDeveRetornar0" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMaiorQuandoAcionadoEListaEstaVaziaDeveRetornar0" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMaiorQuandoAcionadoDeveRetornar42" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMenorQuandoAcionadoEListaEstaVaziaDeveRetornar0" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMenorQuandoAcionadoDeveRetornar10Negativo" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testHasDuplicidadeQuandoAcionadoEListaNaoPossuiDuplicidadeDeveRetornarFalse" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testHasDuplicidadeQuandoAcionadoEListaEstaVaziaDeveRetornarFalse" time="0.001"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testAddQuandoAcionadoComValorPositivosENegativosAumentaTamanhoDaLista" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testHasDuplicidadeQuandoAcionadoEListaPossuiDuplicidadeDeveRetornarTrue" time="0"/>
   <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountQuandoAcionadoEListaPossui3IndicesPreenchidosRetorna3" time="0"/>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountParesQuandoAcionadoEListaPossui6ParesRetorna6" time="0.012">
-    <failure message="expected: &lt;6&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;6&gt; but was: &lt;0&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:534)
-	at com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountParesQuandoAcionadoEListaPossui6ParesRetorna6(ListaUtilTest.java:99)
-</failure>
-    <system-out>TESTE COUNT PARES: 6 NUMEROS
-</system-out>
-  </testcase>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountParesQuandoAcionadoEListaEstaVaziaRetorna0" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountParesQuandoAcionadoEListaPossui6ParesRetorna6" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountParesQuandoAcionadoEListaEstaVaziaRetorna0" time="0.001"/>
   <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountImparesQuandoAcionadoEListaEstaVaziaRetorna0" time="0"/>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountImparesQuandoAcionadoEListaPossui3ImparesRetorna3" time="0">
-    <failure message="expected: &lt;3&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;3&gt; but was: &lt;0&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:534)
-	at com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountImparesQuandoAcionadoEListaPossui3ImparesRetorna3(ListaUtilTest.java:128)
-</failure>
-    <system-out>TESTE COUNT IMPARES: 3 NUMEROS
-</system-out>
-  </testcase>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testSomarQuandoAcionadoDeveRetornar42" time="0.001">
-    <failure message="expected: &lt;42&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;42&gt; but was: &lt;null&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:534)
-	at com.bandtec.projeto.lista.desafio.ListaUtilTest.testSomarQuandoAcionadoDeveRetornar42(ListaUtilTest.java:139)
-</failure>
-    <system-out>TESTE SOMAR: 42
-</system-out>
-  </testcase>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testSomarQuandoAcionadoEListaEstavaziaDeveRetornar0" time="0.001">
-    <failure message="expected: &lt;0&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;null&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:534)
-	at com.bandtec.projeto.lista.desafio.ListaUtilTest.testSomarQuandoAcionadoEListaEstavaziaDeveRetornar0(ListaUtilTest.java:147)
-</failure>
-    <system-out>TESTE SOMAR: LISTA VAZIA
-</system-out>
-  </testcase>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMaiorQuandoAcionadoEListaEstaVaziaDeveRetornar0" time="0.001">
-    <failure message="expected: &lt;0&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;null&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:534)
-	at com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMaiorQuandoAcionadoEListaEstaVaziaDeveRetornar0(ListaUtilTest.java:155)
-</failure>
-    <system-out>TESTE GETMAIOR: LISTA VAZIA
-</system-out>
-  </testcase>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMaiorQuandoAcionadoDeveRetornar42" time="0.001">
-    <failure message="expected: &lt;42&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;42&gt; but was: &lt;null&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:534)
-	at com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMaiorQuandoAcionadoDeveRetornar42(ListaUtilTest.java:168)
-</failure>
-    <system-out>TESTE GETMAIOR: 42
-</system-out>
-  </testcase>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMenorQuandoAcionadoEListaEstaVaziaDeveRetornar0" time="0">
-    <failure message="expected: &lt;0&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;null&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:534)
-	at com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMenorQuandoAcionadoEListaEstaVaziaDeveRetornar0(ListaUtilTest.java:176)
-</failure>
-    <system-out>TESTE GETMENOR: LISTA VAZIA
-</system-out>
-  </testcase>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMenorQuandoAcionadoDeveRetornar10Negativo" time="0.001">
-    <failure message="expected: &lt;-10&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;-10&gt; but was: &lt;null&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:534)
-	at com.bandtec.projeto.lista.desafio.ListaUtilTest.testGetMenorQuandoAcionadoDeveRetornar10Negativo(ListaUtilTest.java:192)
-</failure>
-    <system-out>TESTE GETMENOR: COM -10
-</system-out>
-  </testcase>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testHasDuplicidadeQuandoAcionadoEListaNaoPossuiDuplicidadeDeveRetornarFalse" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.bandtec.projeto.lista.desafio.ListaUtilTest.testHasDuplicidadeQuandoAcionadoEListaNaoPossuiDuplicidadeDeveRetornarFalse(ListaUtilTest.java:222)
-</failure>
-    <system-out>TESTE HASDUPLICIDADE: SEM DUPLICIDADE
-</system-out>
-  </testcase>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testHasDuplicidadeQuandoAcionadoEListaEstaVaziaDeveRetornarFalse" time="0">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.bandtec.projeto.lista.desafio.ListaUtilTest.testHasDuplicidadeQuandoAcionadoEListaEstaVaziaDeveRetornarFalse(ListaUtilTest.java:231)
-</failure>
-    <system-out>TESTE HASDUPLICIDADE: LISTA VAZIA
-</system-out>
-  </testcase>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testAddQuandoAcionadoComValorPositivosENegativosAumentaTamanhoDaLista" time="0.001"/>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testHasDuplicidadeQuandoAcionadoEListaPossuiDuplicidadeDeveRetornarTrue" time="0">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.bandtec.projeto.lista.desafio.ListaUtilTest.testHasDuplicidadeQuandoAcionadoEListaPossuiDuplicidadeDeveRetornarTrue(ListaUtilTest.java:207)
-</failure>
-    <system-out>TESTE HASDUPLICIDADE: COM DUPLICIDADE
-</system-out>
-  </testcase>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testRemoveQuandoAcionadoComArgumentoNuloNaoAlteraTamanhoDaLista" time="0.001"/>
-  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testRemoveQuandoAcionadoComArgumento10DiminuiTamanhoDaLista" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testSomarQuandoAcionadoDeveRetornar42" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testCountQuandoAcionadoEListaEstaVaziaRetorna0" time="0"/>
   <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testAddQuandoAcionadoComArgumentoNuloNaoAlteraTamanhoDaLista" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testRemoveQuandoAcionadoComArgumento10DiminuiTamanhoDaLista" time="0"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testRemoveQuandoAcionadoComArgumento101NaoDiminuiTamanhoDaLista" time="0.001"/>
+  <testcase classname="com.bandtec.projeto.lista.desafio.ListaUtilTest" name="com.bandtec.projeto.lista.desafio.ListaUtilTest.testRemoveQuandoAcionadoComArgumentoNuloNaoAlteraTamanhoDaLista" time="0"/>
 </testsuite>
