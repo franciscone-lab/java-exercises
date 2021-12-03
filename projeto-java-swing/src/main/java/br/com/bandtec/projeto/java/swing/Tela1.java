@@ -37,6 +37,7 @@ public class Tela1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         lblTitulo.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
         lblTitulo.setForeground(new java.awt.Color(57, 0, 255));
@@ -129,7 +130,7 @@ public class Tela1 extends javax.swing.JFrame {
                 .addContainerGap(111, Short.MAX_VALUE))
         );
 
-        pack();
+        setBounds(0, 0, 426, 330);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtTituloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTituloActionPerformed
